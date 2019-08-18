@@ -44,11 +44,10 @@ test('Getting started with ERPNext', async t => {
 
      await f.hover_element("label", "Patient Consultation")
 	
-	await f.click_primary_button('Make New Consultation')
+	await f.click_primary_button('New Consultation')
 
-
+    await f.scroll_to_section("Encounter Impression")
 	await f.fill_field("complaints", "bruxism")
-
 	await f.scroll_to_section("Medical Coding")
 		
 	await f.open_row('codification_table', 1)
