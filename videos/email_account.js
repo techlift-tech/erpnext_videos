@@ -4,12 +4,12 @@ import f from '../lib';
 const video_title = "Email Account"
 
 fixture(video_title)
-    .page ("http://chaiwala.erpnext.com/login");
+    .page ("http://test.techlift.in/login");
 
 test(video_title, async t => {
 	
-	await f.login('umair.sayyed@icloud.com', '1234')
-	await f.setTestSpeed(0.75).wait(500)
+	await f.login('administrator', 'techlift123')
+
 	await f.use_voice("Tom")
 
     await f.toggle_speak(true)

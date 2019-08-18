@@ -3,11 +3,11 @@ import f from '../lib';
 
 
 fixture("Selling Cycle")
-    .page ("http://gadgets.erpnext.com/login");
+    .page ("http://om.vedarths.com/login");
 
 test('Selling Cycle in ERPNext', async t => {
 	
-	await f.login('umair.sayyed@icloud.com', '1234')
+	await f.login('administrator','admin@321')
 	await f.setTestSpeed(0.75).wait(500)
 	await f.use_voice("samantha")
 

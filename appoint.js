@@ -16,53 +16,55 @@ test('Getting started with ERPNext', async t => {
 	
 	
 		
-	await f.click_user_button()
+	//await f.click_user_button()
 
-	await f.hover_element('a', "Set Desktop Icon")
-
-	
-
-	await f.click_user_button()
-
-	await f.hover_element('.dropdown-navbar-new-comments')
+	//await f.hover_element('a', "Set Desktop Icon")
 
 	
 
-	await f.click_notification()
+	//await f.click_user_button()
 
-	await f.pause(1)
-
-	await f.click_notification()
-
-	await f.click_icon('Explore')
-
-	await f.hover_element('a', "Accounts", 0.25)
+	//await f.hover_element('.dropdown-navbar-new-comments')
 
 	
 
-	await f.hover_element('a', "Maintenance", 0.25)
+	//await f.click_notification()
 
-	await f.hover_element('a', "Selling", 0.25)
+	//await f.pause(1)
+
+	//await f.click_notification()
+
+	await f.click_icon('Patient Appointment')
+
+	//await f.hover_element('a', "Accounts", 0.25)
 
 	
-	await f.click_module("Accounts")
+
+	//await f.hover_element('a', "Maintenance", 0.25)
+
+	//await f.hover_element('a', "Selling", 0.25)
+
+	
+	//await f.click_module("Accounts")
 
 	
 
-	await f.click_link("#List/Sales Invoice")
+	//await f.click_link("#List/Patient Appointment")
+    
+     await f.click_list_item("P19080105")
 
+     await f.click_section("Patient Consultation ")
 	
-	await f.click_primary_button('New')
+	await f.click_primary_button('Make New Consultation')
 
 
-	await f.fill_field("customer", "AAROHI FAKE 1", "AAROHI")
+	await f.fill_field("customer", "InMobi Solutions", "inmobi")
 
 	
 		
 	await f.open_row('items', 1)
-	await f.fill_field('item_code', 'TMJ CBCT')
+	await f.fill_field('item_code', 'One Plus 3')
 	await f.fill_field('qty', '2')
-	await f.click_link("Close")
 
 	await f.close_row()
 

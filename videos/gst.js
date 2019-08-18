@@ -3,12 +3,12 @@ import f from '../lib';
 
 
 fixture("Getting Started")
-    .page("http://erpnextv7:8000/login");
+    .page("http://test.techlift.in/login");
 
 
 test('Getting started', async t => {
 
-    await f.login("micheal.corleone@nationaltrading.com", "1234")
+    await f.login("administrator", "techlift123")
     await f.use_voice("veena")
 	await f.setTestSpeed(0.75)
 
