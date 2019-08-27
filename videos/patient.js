@@ -14,10 +14,20 @@ test('Patient in ERPNext', async t => {
     await f.toggle_speak(true)
 	
 	
+	await f.speak(`
+
+		Hi.
+
+		Welcome to E R P Next tutorial.
+
+		In this video, we will learn how to created new patient	`)
+	await f.speak(`you can click on patient icon shown on screen or search on global search`)
 	
     await f.search ("patient li","Patient List")
 
+	await f.speak(`click on new patient`)
     await f.click_primary_button('New')
+    await f.speak(`fill the following fields respectively`)
 
     await f.fill_field("Full Name","suraj")
   
@@ -29,11 +39,14 @@ test('Patient in ERPNext', async t => {
 	await f.fill_field("Blood Group","b+")
 
 	
-	
+	await f.speak(`now click on save buttom and then submit`)
 	await f.click_primary_button("Save")
 	await f.click_primary_button("Submit")
 	await f.click_primary_button("Yes")
-
+await f.speak(`
+			Hope you found this video tutorial useful.
+			Thanks for watching.
+		`)
 	
 		
 	
