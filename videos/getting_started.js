@@ -54,10 +54,7 @@ test('Getting started with ERPNext', async t => {
 	
 	await f.click_primary_button('New')
 
-
 	await f.fill_field("customer", "AAROHI FAKE 1", "AAROHI")
-
-	
 		
 	await f.open_row('items', 1)
 	await f.fill_field('item_code', 'TMJ CBCT')

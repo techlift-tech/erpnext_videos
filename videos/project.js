@@ -5,11 +5,11 @@ const video_title = "Project and Tasks"
 
 
 fixture(video_title)
-    .page ("http://gadgets.erpnext.com/login");
+    .page ("http://localhost:8000/login");
 
 test(video_title, async t => {
 	
-	await f.login('umair.sayyed@icloud.com', '1234')
+	await f.login('administrator','admin')
 	await f.setTestSpeed(0.75).wait(500)
 	await f.use_voice("tom")
 
