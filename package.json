@@ -1,7 +1,12 @@
 {
   "license": "MIT",
   "dependencies": {
-    "say": "^0.16.0"
+    "say": "^0.16.0",
+    "testcafe": "^1.4.1",
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "testcafe": "^1.4.1"
   },
   "scripts": {
     "run-video": "testcafe chrome"
