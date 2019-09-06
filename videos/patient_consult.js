@@ -16,25 +16,14 @@ test('Patient in ERPNext', async t => {
 	
 	await f.click_icon('Patient Appointment')
 
-	await f.click_primary_button('New')
+	
 	
 	await f.goto_desk()
 
-    await f.search ("new patient appointment","New Patient Appointment")
+    await f.search ("patient appointment l","Patient Appointment List")
 
-
-   	await f.fill_field("Patient","DIPAL PATEL","dipal p")
-  
-   	await f.click_element('button', 'Get prescribed procedures')
-   	await f.close_modal()
-   
-   	await f.click_element('button', 'Check availability')
-
-   
-  	await f.fill_field('Date','01/08/2019')
-   
-   	await f.fill_field('Heathcare Practitioner','Dr.Amit Handa')
-   
+    await f.click_element('a', 'P19080194')
+   	//await f.click_list_item("P19080105")
    
     
 	await f.fill_field("Blood Group","B Positive")

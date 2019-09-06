@@ -22,25 +22,26 @@ test('Patient in ERPNext', async (Selector, t) => {
 	await f.click_icon('Patient')
 
 	await f.click_primary_button('New')
-
+await f.pause(1)
 	await f.close_modal()
+	await f.pause(1)
 	await f.goto_desk()
 
 	//await f.speak(`or just search`)
 
-
+await f.pause(1)
 	await f.search ("new patient ","New Patient")
-	
+	await f.pause(1)
 	//await f.speak(`fill the following fields respectively`)
 
 	await f.fill_field("Full Name","suraj")
-
+await f.pause(1)
 	await f.fill_field("Mobile","8550902230")
-	
+	await f.pause(1)
 	await f.fill_field("dob","25/09/1996")
-	
+	await f.pause(1)
 	await f.fill_field("Gender","Male")
-	
+	await f.pause(1)
 	await f.fill_field("Blood Group","B Positive")
 	
 	//await f.speak(`now click on save buttom and then submit`)
