@@ -31,7 +31,7 @@ test('Patient in ERPNext', async t => {
    	await f.click_element('button', 'Check availability')
 
    
-  	await f.fill_field('Date','01/08/2019')
+  	await f.fill_field('Date','frappe.datetime.nowdate()')
    
    	await f.fill_field('Heathcare Practitioner','Dr.Amit Handa')
    
