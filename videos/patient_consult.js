@@ -16,13 +16,16 @@ test('Patient in ERPNext', async t => {
 	
 	await f.click_icon('Patient Appointment')
 
-	
-	
 	await f.goto_desk()
 
     await f.search ("patient appointment l","Patient Appointment List")
+	
+	await f.click_element('.remove-filter', '')
 
-    await f.click_element('a', 'P19080194')
+
+	await f.click_list_item('OP-000112')
+
+
    	//await f.click_list_item("P19080105")
    
     
